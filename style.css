@@ -1,0 +1,37 @@
+body {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.typing {
+    position: absolute;
+    margin-left: 10px;
+}
+
+
+.typing::after {
+    content: "";
+    position: absolute;
+    right: -5px;
+    width: 1px;
+    height: 5%;
+    border-right: 2px solid black;
+    animation: blink 0.8s infinite ease;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
